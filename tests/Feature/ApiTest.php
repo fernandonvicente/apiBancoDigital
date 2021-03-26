@@ -16,15 +16,7 @@ class ApiTest extends TestCase
     {
       $response = $this->get('/api/saldo/6874');
 
-        $response->assertStatus(200);
-
-        //dump($response);
- 
-         $response->seeJson([
-            'message' => 'Saldo',
-        ]);
-        //seeJson
-
+      $response->assertStatus(200);
 
     }
 
